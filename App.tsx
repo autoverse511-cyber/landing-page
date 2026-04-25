@@ -4,7 +4,7 @@ import Ticker from './components/Ticker';
 import Hero from './components/Hero';
 import Highlights from './components/Highlights';
 import Curriculum from './components/Curriculum';
-import ValueStack from './components/ValueStack';
+import Valuestack from './components/Valuestack';
 import Guarantee from './components/Guarantee';
 import FAQ from './components/FAQ';
 import SocialMedia from './components/SocialMedia';
@@ -24,7 +24,7 @@ const App: React.FC = () => {
         <Hero />
         <Highlights />
         <Curriculum />
-        <ValueStack />
+        <Valuestack />
         <Guarantee />
         <FAQ />
         <FinalCTA />

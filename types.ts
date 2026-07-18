@@ -1,43 +1,34 @@
-import React from 'react';
+export interface Feature {
+  id: string;
+  iconName: string;
+  title: string;
+  description: string;
+}
 
-export interface SubLesson {
+export interface BusinessType {
+  id: string;
+  iconName: string;
   title: string;
 }
 
-export interface Lesson {
-  title: string;
-  duration?: string;
-  items: SubLesson[];
+export interface PricingPlan {
+  name: string;
+  messages: string;
+  price: string;
+  isPopular?: boolean;
+  ctaText: string;
+  billingPeriod: string;
 }
 
-export interface Module {
-  title: string;
-  icon: React.ReactNode;
-  lessons: Lesson[];
-}
-
-export interface HighlightItem {
-  icon: React.ReactNode;
-  text: string;
-  color: string;
+export interface PricingCategory {
+  id: string;
+  label: string;
+  plans: PricingPlan[];
 }
 
 export interface FAQItem {
+  id: string;
+  category: string;
   question: string;
   answer: string;
-}
-
-export interface ReviewItem {
-  name: string;
-  role: string;
-  content: string;
-  rating: number;
-  avatar: string;
-}
-
-export interface SocialLink {
-  platform: string;
-  url: string;
-  color: string;
-  icon: React.ReactNode;
 }

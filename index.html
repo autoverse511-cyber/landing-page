@@ -4,100 +4,12 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="https://n8n.io/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
     <title>AutoVerse | n8n Course</title>
-    <meta name="title" content="AutoVerse | Master n8n and AI Agents" />
-    <meta name="description" content="Practical course to learn n8n and build intelligent automation solutions." />
-
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://autoverse.com/" />
-    <meta property="og:title" content="AutoVerse | Master n8n and AI Agents" />
-    <meta property="og:description" content="Practical course to learn n8n and build intelligent automation solutions." />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop" />
-
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://autoverse.com/" />
-    <meta property="twitter:title" content="AutoVerse | Master n8n and AI Agents" />
-    <meta property="twitter:description" content="Practical course to learn n8n and build intelligent automation solutions." />
-    <meta property="twitter:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200&auto=format&fit=crop" />
-
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Tajawal', 'sans-serif'],
-            },
-            colors: {
-              background: '#050505',
-              surface: '#0a0a0a',
-              primary: '#00ff88',
-              secondary: '#00cc66',
-              accent: '#f59e0b',
-            },
-            animation: {
-              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1 ) infinite',
-              'glow': 'glow 2s ease-in-out infinite alternate',
-              'ticker': 'ticker 30s linear infinite',
-            },
-            keyframes: {
-              glow: {
-                '0%': { boxShadow: '0 0 5px #00ff88, 0 0 10px #00ff88' },
-                '100%': { boxShadow: '0 0 20px #00ff88, 0 0 30px #00ff88' },
-              },
-              ticker: {
-                '0%': { transform: 'translateX(100%)' },
-                '100%': { transform: 'translateX(-100%)' },
-              }
-            }
-          },
-        },
-      }
-    </script>
-    <style>
-      ::-webkit-scrollbar { width: 8px; }
-      ::-webkit-scrollbar-track { background: #050505; }
-      ::-webkit-scrollbar-thumb { background: #00cc66; border-radius: 4px; }
-      ::-webkit-scrollbar-thumb:hover { background: #00ff88; }
-      html { scroll-behavior: smooth; }
-      body { background-color: #050505; color: white; }
-      .bg-grid {
-        background-size: 40px 40px;
-        background-image: 
-          linear-gradient(to right, rgba(0, 255, 136, 0.03) 1px, transparent 1px),
-          linear-gradient(to bottom, rgba(0, 255, 136, 0.03) 1px, transparent 1px);
-      }
-      .scanlines {
-        background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.2));
-        background-size: 100% 4px;
-        position: fixed;
-        pointer-events: none;
-        top: 0; right: 0; bottom: 0; left: 0;
-        z-index: 50;
-        opacity: 0.15;
-      }
-      .text-shadow-neon { text-shadow: 0 0 10px rgba(0, 255, 136, 0.5); }
-    </style>
-    <script type="importmap">
-    {
-      "imports": {
-        "framer-motion": "https://esm.sh/framer-motion@^12.34.0",
-        "react/": "https://esm.sh/react@^19.2.4/",
-        "react": "https://esm.sh/react@^19.2.4",
-        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-        "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
-      }
-    }
-    </script>
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/src/index.css">
   </head>
-  <body class="bg-background text-white font-sans antialiased overflow-x-hidden">
+  <body>
     <div id="root"></div>
-    <div class="scanlines"></div>
-    <script type="module" src="/main.tsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

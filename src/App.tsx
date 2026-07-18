@@ -1,15 +1,15 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import { Navbar } from "./components/Navbar";
-import { Hero } from "./components/Hero";
-import { Demo } from "./components/Demo";
-import { Features } from "./components/Features";
-import { HowItWorks } from "./components/HowItWorks";
-import { Businesses } from "./components/Businesses";
-import { Pricing } from "./components/Pricing";
-import { FAQ } from "./components/FAQ";
-import { FinalCTA } from "./components/FinalCTA";
-import { Footer } from "./components/Footer";
+import { Navbar } from "./Navbar";
+import { Hero } from "./Hero";
+import { Demo } from "./Demo";
+import { Features } from "./Features";
+import { HowItWorks } from "./HowItWorks";
+import { Businesses } from "./Businesses";
+import { Pricing } from "./Pricing";
+import { FAQ } from "./FAQ";
+import { FinalCTA } from "./FinalCTA";
+import { Footer } from "./Footer";
 
 // Landing Page Component assembling all custom sections
 const LandingPage: React.FC = () => {
